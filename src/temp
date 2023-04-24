@@ -1,8 +1,0 @@
-      <!-- { <h2>Collaborators for {owner}/{repo}</h2>
-      {isLoading && <p>Loading...</p>}
-      {data?.map((collaborator: any) => (
-        <div key={collaborator.id}>
-          <img src={collaborator.avatar_url} alt={collaborator.login} width="50" height="50" />
-          <p>{collaborator.login}</p>
-        </div>
-      ))} } -->
