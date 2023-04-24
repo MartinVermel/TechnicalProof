@@ -4,8 +4,8 @@ import { useGetRepoBranchesQuery, useGetRepoContributorsQuery } from './api';
 
 const RepoDetailsPage: React.FC = () => {
   const { owner, repo } = useParams<{owner: string, repo: string}>();
-  const { data: branches, error: branchesError, isLoading: branchesLoading } = useGetRepoBranchesQuery({ owner, repo });
-  const { data: contributors, error: contributorsError, isLoading: contributorsLoading } = useGetRepoContributorsQuery({ owner, repo });
+  const { data: branches, isLoading: branchesLoading } = useGetRepoBranchesQuery({ owner, repo });
+  const { data: contributors, isLoading: contributorsLoading } = useGetRepoContributorsQuery({ owner, repo });
 
   return (
     <div className="horizontal-list">
